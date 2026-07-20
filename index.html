@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Клининг для бизнеса — обслуживание объектов юридических лиц</title>
-<meta name="description" content="Комплексное клининговое обслуживание офисов, складов, торговых и производственных площадей. Договор, закрывающие документы, безнал. Индивидуальный расчёт под ваш объект.">
+<meta name="description" content="Комплексное клининговое обслуживание офисов, складов, торговых и производственных площадей по всей России. Договор, закрывающие документы, безнал. Индивидуальный расчёт под ваш объект.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,10 +13,10 @@
 :root{
   --ink:#1C2118;
   --ink-soft:#4B5240;
-  --olive:#5B6B3E;
-  --olive2:#3F4A2B;
+  --olive:#6B7C3F;
+  --olive2:#4A5730;
   --forest:#333D24;
-  --sage:#8FA06B;
+  --sage:#9DAE72;
   --sage-light:#AAB98A;
   --cream:#F6F4EC;
   --cream2:#EFEBDA;
@@ -49,14 +49,25 @@ img{max-width:100%}
 .s-white{background:var(--white)}
 .s-cream{background:var(--cream)}
 .s-forest{background:linear-gradient(155deg,var(--forest) 0%,var(--olive2) 55%,var(--olive) 130%)}
+.s-olive{background:linear-gradient(155deg,var(--olive2) 0%,var(--olive) 60%,var(--sage) 145%)}
+.s-olive h1,.s-olive h2,.s-olive h3{color:#fff}
+.s-olive p{color:rgba(255,255,255,.72)}
+.s-olive .ey{color:var(--cream2)}
+.s-olive .ey::before{background:var(--cream2)}
+.s-olive .ref{color:rgba(255,255,255,.45)}
+.s-olive .tc,.s-olive .guc{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(6px)}
+.s-olive .tc:hover,.s-olive .guc:hover{border-color:rgba(255,255,255,.45);background:rgba(255,255,255,.14)}
+.s-olive .tc-num{color:rgba(255,255,255,.35)}
+.s-olive .tct,.s-olive .guc-title{color:#fff}
+.s-olive .tcd,.s-olive .guc-desc{color:rgba(255,255,255,.65)}
 ::selection{background:var(--sage);color:#fff}
 
 /* file reference — signature element: quiet dossier-style index in the corner of cards */
 .ref{font-family:var(--fm);font-size:10.5px;color:var(--muted);letter-spacing:.04em}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--fb);font-weight:600;font-size:14.5px;cursor:pointer;border:none;transition:all .35s var(--ease);white-space:nowrap;letter-spacing:-.01em}
-.bp{background:var(--forest);color:#fff;padding:17px 34px;border-radius:var(--r-full)}
-.bp:hover{background:var(--olive);transform:translateY(-2px);box-shadow:0 14px 32px rgba(59,69,38,.28)}
+.bp{background:var(--olive);color:#fff;padding:17px 34px;border-radius:var(--r-full)}
+.bp:hover{background:var(--olive2);transform:translateY(-2px);box-shadow:0 14px 32px rgba(59,69,38,.28)}
 .bw{background:rgba(255,255,255,.1);color:#fff;padding:15px 28px;border:1.5px solid rgba(255,255,255,.32);border-radius:var(--r-full);backdrop-filter:blur(10px)}
 .bw:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.55)}
 .bo{background:transparent;color:var(--forest);padding:15px 28px;border:1.5px solid var(--line2);border-radius:var(--r-full)}
@@ -77,7 +88,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(251,250,245,
 .burger span{width:24px;height:2px;background:var(--ink);border-radius:2px;display:block}
 
 /* HERO — dossier framing instead of a discount banner: this is the thesis for a B2B page */
-.hero{min-height:96vh;padding-top:80px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(155deg,#232B18 0%,#333D24 45%,#5B6B3E 130%)}
+.hero{min-height:96vh;padding-top:80px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(155deg,#242C18 0%,#3A4526 45%,#6B7C3F 130%)}
 .hero-tex{position:absolute;inset:0;opacity:.5;background:
   repeating-linear-gradient(100deg,transparent 0 120px,rgba(255,255,255,.025) 120px 121px);}
 .hero-content{position:relative;z-index:2;max-width:800px}
@@ -270,9 +281,9 @@ footer{background:var(--forest);padding:56px 0 30px}
   <div class="hero-tex"></div>
   <div class="wrap" style="position:relative;z-index:2">
     <div class="hero-content">
-      <div class="hero-doc"><div class="hero-doc-line"></div>КЛИНИНГ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ<div class="hero-doc-line"></div></div>
+      <div class="hero-doc"><div class="hero-doc-line"></div>КЛИНИНГ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ · ПО ВСЕЙ РОССИИ<div class="hero-doc-line"></div></div>
       <h1 class="fade">Чистота, за которую <em>отвечает договор</em></h1>
-      <p class="hdesc fade" data-d="1">Комплексное обслуживание офисов, складов, торговых и производственных площадей. Фиксированный график, безнал, полный пакет закрывающих документов.</p>
+      <p class="hdesc fade" data-d="1">Комплексное обслуживание офисов, складов, торговых и производственных площадей — в Москве и по всей России. Фиксированный график, безнал, полный пакет закрывающих документов.</p>
       <div class="hctas fade" data-d="2">
         <a href="#calculator" class="btn bp">Рассчитать стоимость обслуживания</a>
         <a href="#contact" class="btn bw">Запросить коммерческое предложение</a>
@@ -288,7 +299,7 @@ footer{background:var(--forest);padding:56px 0 30px}
 </section>
 
 <!-- ДОВЕРИЕ -->
-<section class="sec s-cream">
+<section class="sec s-olive">
   <div class="wrap">
     <div class="sh fade"><div class="ey">Почему выбирают нас</div><h2>Работаем как подрядчик,<br>а не разовый исполнитель</h2></div>
     <div class="tg fade">
@@ -382,9 +393,9 @@ footer{background:var(--forest);padding:56px 0 30px}
   <div class="wrap">
     <div class="sh center fade"><div class="ey">Клиенты</div><h2>Компании, которые нам доверяют</h2></div>
     <div class="revg fade">
-      <div class="rev"><div class="rev-head"><div class="rev-name">ООО «Название компании»</div><div class="rev-city">Офис, 800 м² · Казань</div></div><p class="rev-text">«Обслуживаемся более года, ни одного срыва графика. Документы приходят вовремя, вопросов у бухгалтерии не возникает.»</p></div>
-      <div class="rev"><div class="rev-head"><div class="rev-name">Название компании</div><div class="rev-city">Складской комплекс · Казань</div></div><p class="rev-text">«Перевели клининг на аутсорс — сэкономили на штате и администрировании. Команда закреплена, знает специфику объекта.»</p></div>
-      <div class="rev"><div class="rev-head"><div class="rev-name">Название компании</div><div class="rev-city">Торговая сеть · Казань</div></div><p class="rev-text">«Важна была предсказуемость — фиксированная цена, чёткий график по всем точкам сети. Именно это и получили.»</p></div>
+      <div class="rev"><div class="rev-head"><div class="rev-name">ООО «Название компании»</div><div class="rev-city">Офис, 800 м² · Москва</div></div><p class="rev-text">«Обслуживаемся более года, ни одного срыва графика. Документы приходят вовремя, вопросов у бухгалтерии не возникает.»</p></div>
+      <div class="rev"><div class="rev-head"><div class="rev-name">Название компании</div><div class="rev-city">Складской комплекс · Санкт-Петербург</div></div><p class="rev-text">«Перевели клининг на аутсорс — сэкономили на штате и администрировании. Команда закреплена, знает специфику объекта.»</p></div>
+      <div class="rev"><div class="rev-head"><div class="rev-name">Название компании</div><div class="rev-city">Торговая сеть · несколько регионов</div></div><p class="rev-text">«Важна была предсказуемость — фиксированная цена, чёткий график по всем точкам сети. Именно это и получили.»</p></div>
     </div>
   </div>
 </section>
@@ -399,7 +410,7 @@ footer{background:var(--forest);padding:56px 0 30px}
       <div class="fade" data-d="1">
         <div class="ey">О компании</div>
         <h2>Клининг, выстроенный<br>как процесс, а не услуга</h2>
-        <p style="margin-top:18px;margin-bottom:12px">Работаем с юридическими лицами — от небольших офисов до сетевых объектов с несколькими точками обслуживания.</p>
+        <p style="margin-top:18px;margin-bottom:12px">Работаем с юридическими лицами по всей России — от небольших офисов до сетевых объектов с несколькими точками обслуживания в разных регионах.</p>
         <p>Каждый объект получает закреплённую команду и персонального менеджера — без постоянной смены исполнителей.</p>
         <div class="aquote">«Для бизнеса важна не разовая уборка, а предсказуемость. Именно на этом строится наша работа»</div>
         <div class="apts">
@@ -414,7 +425,7 @@ footer{background:var(--forest);padding:56px 0 30px}
 </section>
 
 <!-- ГАРАНТИИ -->
-<section class="sec s-cream">
+<section class="sec s-olive">
   <div class="wrap">
     <div class="sh center fade"><div class="ey">Гарантии</div><h2>Стандарты, зафиксированные в договоре</h2></div>
     <div class="gug fade">
@@ -432,7 +443,7 @@ footer{background:var(--forest);padding:56px 0 30px}
     <div class="sh center fade"><div class="ey">Вопросы</div><h2>Часто спрашивают</h2></div>
     <div class="fw fade">
       <div class="fi"><button class="fq" onclick="faq(this)">Работаете ли вы по безналичному расчёту?<span class="farr">+</span></button><div class="fa">Да, работаем только по безналу с юридическими лицами. Выставляем счета, закрывающие документы — акты и счета-фактуры — предоставляются ежемесячно.</div></div>
-      <div class="fi"><button class="fq" onclick="faq(this)">Можно ли заключить договор на несколько объектов сети?<span class="farr">+</span></button><div class="fa">Да, работаем с сетевыми заказчиками — единый договор на несколько точек, единый график отчётности и оплаты.</div></div>
+      <div class="fi"><button class="fq" onclick="faq(this)">Можно ли заключить договор на несколько объектов сети?<span class="farr">+</span></button><div class="fa">Да, работаем с сетевыми заказчиками — единый договор на несколько точек в разных городах, единый график отчётности и оплаты.</div></div>
       <div class="fi"><button class="fq" onclick="faq(this)">Как быстро можно начать обслуживание?<span class="farr">+</span></button><div class="fa">После выезда специалиста и согласования условий — обычно в течение 3–5 рабочих дней с момента подписания договора.</div></div>
       <div class="fi"><button class="fq" onclick="faq(this)">Что если сотрудник не устраивает по качеству работы?<span class="farr">+</span></button><div class="fa">Оперативно заменяем сотрудника на объекте — вопрос решается в рамках закреплённого менеджера обслуживания.</div></div>
     </div>
@@ -478,12 +489,12 @@ footer{background:var(--forest);padding:56px 0 30px}
     <div class="ftop">
       <div>
         <div class="flogo">Название <em>Бренда</em></div>
-        <p class="fdesc">Клининговое обслуживание объектов юридических лиц. Договор, документы, безнал.</p>
+        <p class="fdesc">Клининговое обслуживание объектов юридических лиц по всей России. Договор, документы, безнал.</p>
       </div>
       <div class="fcol"><h4>Навигация</h4><a href="#services">Услуги</a><a href="#process">Как работаем</a><a href="#reviews">Клиенты</a><a href="#faq">Вопросы</a></div>
       <div class="fcol"><h4>Контакты</h4><a href="tel:+79048701385">+7 (904) 870-13-85</a><a href="mailto:info@company.ru">info@company.ru</a><a href="#contact">Оставить заявку</a></div>
     </div>
-    <div class="fbot"><span class="fcopy">© 2026 · ИНН по запросу</span><span class="fcopy">Казань и пригород</span></div>
+    <div class="fbot"><span class="fcopy">© 2026 · ИНН по запросу</span><span class="fcopy">Работаем по всей России</span></div>
   </div>
 </footer>
 
