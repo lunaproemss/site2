@@ -163,12 +163,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(251,250,245,
 
 /* REVIEWS */
 .revg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
-.rev{background:var(--white);padding:30px;border:1px solid var(--line);border-radius:var(--r-lg);transition:all .3s var(--ease)}
+.rev{background:var(--white);padding:30px;border:1px solid var(--line);border-radius:var(--r-lg);transition:all .3s var(--ease);display:flex;flex-direction:column}
 .rev:hover{border-color:var(--olive);transform:translateY(-3px);box-shadow:var(--sh-md)}
 .rev-head{margin-bottom:16px}
 .rev-name{font-family:var(--fd);font-weight:600;color:var(--ink);font-size:14.5px}
 .rev-city{font-size:11.5px;color:var(--muted)}
-.rev-text{font-size:13.5px;color:var(--ink-soft);line-height:1.75;font-style:italic}
+.rev-service{font-size:11.5px;color:var(--olive2);font-weight:600;margin-top:8px;letter-spacing:.02em}
+.rev-text{font-size:13.5px;color:var(--ink-soft);line-height:1.75;font-style:italic;flex-grow:1;margin:14px 0}
+.rev-author{font-size:12.5px;color:var(--muted);font-weight:600;border-top:1px solid var(--line);padding-top:14px;margin-top:auto}
 
 /* ABOUT */
 .ag{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -176,6 +178,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(251,250,245,
 .apts{display:flex;flex-direction:column;gap:13px;margin-top:24px}
 .apt{display:flex;align-items:center;gap:11px;font-size:14px;color:var(--ink-soft);font-weight:500}
 .aptd{width:6px;height:6px;background:var(--olive);flex-shrink:0}
+.a-sign{font-family:var(--fd);font-style:italic;font-size:15px;color:var(--forest);margin-top:4px}
 
 /* GUARANTEES */
 .gug{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
@@ -283,15 +286,15 @@ footer{background:var(--forest);padding:56px 0 30px}
   <div class="hero-tex"></div>
   <div class="wrap" style="position:relative;z-index:2">
     <div class="hero-content">
-      <div class="hero-doc"><div class="hero-doc-line"></div>КЛИНИНГ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ · ПО ВСЕЙ РОССИИ<div class="hero-doc-line"></div></div>
+      <div class="hero-doc"><div class="hero-doc-line"></div>КЛИНИНГ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ · НА РЫНКЕ С 2019 ГОДА · ПО ВСЕЙ РОССИИ<div class="hero-doc-line"></div></div>
       <h1 class="fade">Чистота, за которую <em>отвечает договор</em></h1>
-      <p class="hdesc fade" data-d="1">Комплексное обслуживание офисов, складов, торговых и производственных площадей — в Москве и по всей России. Фиксированный график, безнал, полный пакет закрывающих документов.</p>
+      <p class="hdesc fade" data-d="1">Комплексное обслуживание офисов, складов, торговых и производственных площадей по всей России. Фиксированный график, безнал, полный пакет закрывающих документов.</p>
       <div class="hctas fade" data-d="2">
         <a href="#calculator" class="btn bp-hero">Рассчитать стоимость обслуживания</a>
         <a href="#contact" class="btn bp-hero">Запросить коммерческое предложение</a>
       </div>
       <div class="hstats fade" data-d="3">
-        <div class="hs"><div class="hsn">24/7</div><div class="hsl">возможен график обслуживания</div></div>
+        <div class="hs"><div class="hsn">2019</div><div class="hsl">на рынке клининга для бизнеса</div></div>
         <div class="hs"><div class="hsn">100%</div><div class="hsl">безналичный расчёт, документы</div></div>
         <div class="hs"><div class="hsn">15</div><div class="hsl">мин — среднее время ответа</div></div>
         <div class="hs"><div class="hsn">0</div><div class="hsl">штрафов по договорам за год</div></div>
@@ -395,9 +398,42 @@ footer{background:var(--forest);padding:56px 0 30px}
   <div class="wrap">
     <div class="sh center fade"><div class="ey">Клиенты</div><h2>Компании, которые нам доверяют</h2></div>
     <div class="revg fade">
-      <div class="rev"><div class="rev-head"><div class="rev-name">ООО «Название компании»</div><div class="rev-city">Офис, 800 м² · Москва</div></div><p class="rev-text">«Обслуживаемся более года, ни одного срыва графика. Документы приходят вовремя, вопросов у бухгалтерии не возникает.»</p></div>
-      <div class="rev"><div class="rev-head"><div class="rev-name">Название компании</div><div class="rev-city">Складской комплекс · Санкт-Петербург</div></div><p class="rev-text">«Перевели клининг на аутсорс — сэкономили на штате и администрировании. Команда закреплена, знает специфику объекта.»</p></div>
-      <div class="rev"><div class="rev-head"><div class="rev-name">Название компании</div><div class="rev-city">Торговая сеть · несколько регионов</div></div><p class="rev-text">«Важна была предсказуемость — фиксированная цена, чёткий график по всем точкам сети. Именно это и получили.»</p></div>
+      <div class="rev">
+        <div class="rev-head">
+          <div class="rev-name">LC Waikiki</div>
+          <div class="rev-city">Магазин одежды · Москва</div>
+          <div class="rev-service">Ежедневная уборка торгового зала и служебных помещений</div>
+        </div>
+        <p class="rev-text">«Сотрудничаем с клининговой компанией уже более 3 лет. Уборка проходит ежедневно до открытия магазина, мы приходим в чистый зал, готовый к приёму покупателей. Документы всегда вовремя, бухгалтерия без вопросов. Надёжный партнёр, рекомендуем.»</p>
+        <div class="rev-author">Надежда В., управляющая магазином</div>
+      </div>
+      <div class="rev">
+        <div class="rev-head">
+          <div class="rev-name">Шашлыкоф</div>
+          <div class="rev-city">Кафе · Казань</div>
+          <div class="rev-service">Мойщица посуды и уборка кухни</div>
+        </div>
+        <p class="rev-text">«В нашем кафе постоянный поток гостей, посуды горы. Штатная мойщица не справлялась, постоянно были срывы. Обратились к КК, и теперь у нас работают их сотрудники. Никаких головных болей, где взять мойщицу, кем заменить. Работаем уже больше года, всем довольны.»</p>
+        <div class="rev-author">Марат Х., управляющий кафе</div>
+      </div>
+      <div class="rev">
+        <div class="rev-head">
+          <div class="rev-name">Грин Лэнд</div>
+          <div class="rev-city">Детский центр · Нижневартовск</div>
+          <div class="rev-service">Химчистка ковровых покрытий</div>
+        </div>
+        <p class="rev-text">«В нашем ДЦ большая зона с ковровым покрытием, и его надо чистить регулярно, чтобы он не терял вид. Пригласили компанию, сделали пробную химчистку и увидели отличный результат. Теперь заказываем раз в месяц. Оперативно, качественно, без лишних разговоров.»</p>
+        <div class="rev-author">Елена М., управляющая</div>
+      </div>
+      <div class="rev">
+        <div class="rev-head">
+          <div class="rev-name">ЗСПК</div>
+          <div class="rev-city">Проектная компания · Нижневартовск</div>
+          <div class="rev-service">Ежедневная уборка офиса</div>
+        </div>
+        <p class="rev-text">«Мы проектная компания, у нас строгие требования к порядку: документы, чертежи, чистота в переговорных — и это всё должно быть на своих местах. Раньше пытались сами организовывать уборку, но постоянно были проблемы: то сотрудница заболела, то качество хромает. Передали клининг этой команде и забыли об этом. Каждое утро офис чистый, сотрудники довольны. Работаем уже больше года, рекомендуем.»</p>
+        <div class="rev-author">Нина К., директор</div>
+      </div>
     </div>
   </div>
 </section>
@@ -412,11 +448,12 @@ footer{background:var(--forest);padding:56px 0 30px}
       <div class="fade" data-d="1">
         <div class="ey">О компании</div>
         <h2>Клининг, выстроенный<br>как процесс, а не услуга</h2>
-        <p style="margin-top:18px;margin-bottom:12px">Работаем с юридическими лицами по всей России — от небольших офисов до сетевых объектов с несколькими точками обслуживания в разных регионах.</p>
-        <p>Каждый объект получает закреплённую команду и персонального менеджера — без постоянной смены исполнителей.</p>
-        <div class="aquote">«Для бизнеса важна не разовая уборка, а предсказуемость. Именно на этом строится наша работа»</div>
+        <p style="margin-top:18px">Меня зовут Зарина Яхина, я владелец клининговой компании «[Название]».</p>
+        <p style="margin-top:12px">С 2019 года мы профессионально наводим порядок в офисах, ресторанах, салонах и на других коммерческих объектах. Работаем с крупными сетями и с малым бизнесом — для нас важен каждый клиент.</p>
+        <div class="aquote">«Наша философия: мы берём на себя ответственность за чистоту, чтобы вы могли сосредоточиться на своём деле»</div>
+        <div class="a-sign">— Зарина Яхина, основатель</div>
         <div class="apts">
-          <div class="apt"><div class="aptd"></div>Опыт обслуживания коммерческих объектов</div>
+          <div class="apt"><div class="aptd"></div>На рынке с 2019 года</div>
           <div class="apt"><div class="aptd"></div>Полный комплект закрывающих документов</div>
           <div class="apt"><div class="aptd"></div>Закреплённая команда на каждый объект</div>
         </div>
@@ -491,7 +528,7 @@ footer{background:var(--forest);padding:56px 0 30px}
     <div class="ftop">
       <div>
         <div class="flogo">Название <em>Бренда</em></div>
-        <p class="fdesc">Клининговое обслуживание объектов юридических лиц по всей России. Договор, документы, безнал.</p>
+        <p class="fdesc">Клининговое обслуживание объектов юридических лиц по всей России. На рынке с 2019 года. Договор, документы, безнал.</p>
       </div>
       <div class="fcol"><h4>Навигация</h4><a href="#services">Услуги</a><a href="#process">Как работаем</a><a href="#reviews">Клиенты</a><a href="#faq">Вопросы</a></div>
       <div class="fcol"><h4>Контакты</h4><a href="tel:+79048701385">+7 (904) 870-13-85</a><a href="mailto:info@company.ru">info@company.ru</a><a href="#contact">Оставить заявку</a></div>
