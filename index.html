@@ -264,6 +264,23 @@ footer{background:var(--forest);padding:56px 0 30px}
   .fw2{padding:30px 22px}
 }
 @media(min-width:861px){#mobile-menu{display:none !important}.burger{display:none}}
+  /* ===== ШАПКА В ЦВЕТ ЛОГОТИПА ===== */
+nav{
+  background:#2F3226;                 /* цвет как у логотипа */
+  backdrop-filter:none;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.ni{height:76px}
+.nl a{color:rgba(255,255,255,.82)}
+.nl a:hover{color:#fff}
+.nl a::after{background:#D9E0C4;bottom:-18px}
+.burger span{background:#fff}
+nav .bp{background:var(--olive);color:#fff}
+nav .bp:hover{background:#fff;color:var(--olive2)}
+
+/* мобильное меню */
+#mobile-menu{background:#2F3226 !important;border-top:1px solid rgba(255,255,255,.1) !important}
+#mobile-menu a{color:#fff !important;border-bottom-color:rgba(255,255,255,.12) !important}
 </style>
 </head>
 <body>
@@ -272,7 +289,7 @@ footer{background:var(--forest);padding:56px 0 30px}
 <nav>
   <div class="ni">
     <a href="/" class="logo">
-     <img src="Logo2.png" alt="Пространство чистоты" style="height:70px;width:auto;border-radius:14px;margin-bottom:14px;display:block">
+     <img src="Logo2.png" alt="Пространство чистоты" style="height:56px;width:56px;border-radius:50%;object-fit:cover;display:block">
     </a>
     <ul class="nl">
       <li><a href="#services">Услуги</a></li>
